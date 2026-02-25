@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "C:\\Escritorio\\Recursos\\2_Proyectos Gráficos\\Genesis\\bin-int\\Debug~x64\\Genesis\\Module.obj",
+            "outputs": [
+                "C:\\Escritorio\\Recursos\\2_Proyectos Gráficos\\Genesis\\bin-int\\Debug~x64\\Genesis\\Module.ixx.ifc.dt.module.json",
+                "C:\\Escritorio\\Recursos\\2_Proyectos Gráficos\\Genesis\\bin-int\\Debug~x64\\Genesis\\Module.ixx.ifc.dt.d.json",
+                "C:\\Escritorio\\Recursos\\2_Proyectos Gráficos\\Genesis\\bin-int\\Debug~x64\\Genesis\\Module.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "Module",
+                    "source-path": "c:\\escritorio\\recursos\\2_proyectos gráficos\\genesis\\genesis\\src\\genesis\\module.ixx",
+                    "is-interface": true
+                }
+            ],
+            "requires": []
+        }
+    ]
+}
