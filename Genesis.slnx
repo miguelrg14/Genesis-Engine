@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+  </Configurations>
+	<Project Path="../../../../../../../../Escritorio/Recursos/2_Proyectos Gráficos/Genesis/Sandbox/Sandbox.vcxproj" Id="dd49d50d-06d2-449a-a5aa-8b92adfe7273" />
+	<Project Path="../../../../../../../../Escritorio/Recursos/2_Proyectos Gráficos/Genesis/Genesis/Genesis.vcxproj" Id="c7f8472a-2bff-4c7d-854a-3ebb5a09fa61" />
+</Solution>
