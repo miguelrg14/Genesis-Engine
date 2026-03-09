@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Genesis\Log.h" />
     <ClInclude Include="src\Genesis.h" />
     <ClInclude Include="src\Genesis\Application.h" />
     <ClInclude Include="src\Genesis\Core.h" />
     <ClInclude Include="src\Genesis\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Genesis\Log.cpp" />
     <ClCompile Include="src\Genesis\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -67,6 +69,8 @@
       <PreprocessorDefinitions>GS_PLATFORM_WINDOWS;GS_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions);_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)Genesis\vendor\spdlog\include;</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -82,6 +86,8 @@
       <PreprocessorDefinitions>GS_PLATFORM_WINDOWS;GS_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions);NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)Genesis\vendor\spdlog\include;</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
