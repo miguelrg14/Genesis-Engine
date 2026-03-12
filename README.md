@@ -1,6 +1,6 @@
 Genesis is a modular ECS Game Engine personal project made for learnign proposal.
 
-Mainly followed TheCherno course series, mixed with personal learning and experience in Game Development University Grade and more personal research!
+Mainly followed TheCherno course series, mixed with personal research and experience in Game Development University Grade!
 - Game Engine Series: https://www.youtube.com/playlist?list=PLlrATfBNZ98dC-V-N3m0Go4deliWHPFwT 
 
 Libraries and technologies used:
