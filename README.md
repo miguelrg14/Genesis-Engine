@@ -1,8 +1,12 @@
-## License
+Genesis is a modular ECS Game Engine personal project made for learnign proposal.
 
-This project is **not open source**.
+Mainly followed TheCherno course series, mixed with personal learning and experience in Game Development University Grade and more personal research!
+- Game Engine Series: https://www.youtube.com/playlist?list=PLlrATfBNZ98dC-V-N3m0Go4deliWHPFwT 
 
-The source code is publicly available **for viewing purposes only**
-as part of a personal/technical portfolio.
+Libraries and technologies used:
+- Spdlog: https://github.com/gabime/spdlog 
+- Premake: https://github.com/premake/premake-core 
 
-See the LICENSE file for details.
+More Wikis and information:
+- Cppreference: https://en.cppreference.com/ 
+- Cplusplus.: https://cplusplus.com/ 
