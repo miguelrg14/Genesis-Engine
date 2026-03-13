@@ -158,6 +158,10 @@ copy /B /Y "..\bin\Dist-windows-x86_64\Genesis\Genesis.dll" "$(ProjectDir)\..\bi
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Genesis\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\Genesis\Events\Event.h" />
+    <ClInclude Include="src\Genesis\Events\KeyEvent.h" />
+    <ClInclude Include="src\Genesis\Events\MouseEvent.h" />
     <ClInclude Include="src\Genesis.h" />
     <ClInclude Include="src\Genesis\Application.h" />
     <ClInclude Include="src\Genesis\Core.h" />

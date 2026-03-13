@@ -4,6 +4,9 @@
     <Filter Include="Genesis">
       <UniqueIdentifier>{535FBF50-BF3E-3EEC-C856-C9C234B5A44D}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Genesis\Events">
+      <UniqueIdentifier>{30035aca-91d3-473e-aa7e-a2aaa6cefb1f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Genesis.h" />
@@ -18,6 +21,18 @@
     </ClInclude>
     <ClInclude Include="src\Genesis\Log.h">
       <Filter>Genesis</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Genesis\Events\ApplicationEvent.h">
+      <Filter>Genesis\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Genesis\Events\Event.h">
+      <Filter>Genesis\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Genesis\Events\KeyEvent.h">
+      <Filter>Genesis\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Genesis\Events\MouseEvent.h">
+      <Filter>Genesis\Events</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
