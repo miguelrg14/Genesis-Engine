@@ -5,7 +5,7 @@
       <UniqueIdentifier>{535FBF50-BF3E-3EEC-C856-C9C234B5A44D}</UniqueIdentifier>
     </Filter>
     <Filter Include="Genesis\Events">
-      <UniqueIdentifier>{30035aca-91d3-473e-aa7e-a2aaa6cefb1f}</UniqueIdentifier>
+      <UniqueIdentifier>{D72FACF6-C3FD-9FFC-AC91-102398FE7B61}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -19,9 +19,6 @@
     <ClInclude Include="src\Genesis\EntryPoint.h">
       <Filter>Genesis</Filter>
     </ClInclude>
-    <ClInclude Include="src\Genesis\Log.h">
-      <Filter>Genesis</Filter>
-    </ClInclude>
     <ClInclude Include="src\Genesis\Events\ApplicationEvent.h">
       <Filter>Genesis\Events</Filter>
     </ClInclude>
@@ -33,6 +30,9 @@
     </ClInclude>
     <ClInclude Include="src\Genesis\Events\MouseEvent.h">
       <Filter>Genesis\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Genesis\Log.h">
+      <Filter>Genesis</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
