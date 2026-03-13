@@ -1,7 +1,12 @@
 Genesis is a modular ECS Game Engine personal project made for learnign proposal.
 
-Mainly followed TheCherno course series, mixed with personal learning and experience in Game Development University Grade and more personal research!
-- Game Engine Series: https://www.youtube.com/playlist?list=PLlrATfBNZ98dC-V-N3m0Go4deliWHPFwT 
+Mainly followed TheCherno course series, mixed with personal research and experience in Game Development University Grade!
+- Game Engine Series: https://www.youtube.com/playlist?list=PLlrATfBNZ98dC-V-N3m0Go4deliWHPFwT
+
+Using VS 2026 and C++20.
+
+Supported OS:
+- Windows
 
 Libraries and technologies used:
 - Spdlog: https://github.com/gabime/spdlog 
