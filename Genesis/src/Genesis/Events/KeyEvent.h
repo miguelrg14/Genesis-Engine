@@ -54,7 +54,7 @@ namespace Genesis {
 			return ss.str();
 		}
 
-		EVENT_CLASS_TYPE(KeyPressed)
+		EVENT_CLASS_TYPE(KeyReleased)
 	private:
 		int m_RepeatCount;
 	};
@@ -72,6 +72,6 @@ namespace Genesis {
 			return ss.str();
 		}
 
-		EVENT_CLASS_TYPE(KeyReleased)
+		EVENT_CLASS_TYPE(KeyTyped)
 	};
 }
