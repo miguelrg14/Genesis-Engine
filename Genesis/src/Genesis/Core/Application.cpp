@@ -1,6 +1,7 @@
+#include "gspch.h"
 #include "Application.h"
 
-#include "../Events/ApplicationEvent.h"
+#include "Genesis/Events/ApplicationEvent.h"
 #include "log.h"
 
 namespace Genesis

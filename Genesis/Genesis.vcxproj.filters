@@ -4,6 +4,9 @@
     <Filter Include="Genesis">
       <UniqueIdentifier>{535FBF50-BF3E-3EEC-C856-C9C234B5A44D}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Genesis\Core">
+      <UniqueIdentifier>{8B0F48FF-7772-D7A3-20F8-0F5A0C3AA326}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Genesis\Events">
       <UniqueIdentifier>{D72FACF6-C3FD-9FFC-AC91-102398FE7B61}</UniqueIdentifier>
     </Filter>
@@ -11,13 +14,16 @@
   <ItemGroup>
     <ClInclude Include="src\Genesis.h" />
     <ClInclude Include="src\Genesis\Core\Application.h">
-      <Filter>Genesis</Filter>
+      <Filter>Genesis\Core</Filter>
     </ClInclude>
     <ClInclude Include="src\Genesis\Core\Core.h">
-      <Filter>Genesis</Filter>
+      <Filter>Genesis\Core</Filter>
     </ClInclude>
     <ClInclude Include="src\Genesis\Core\EntryPoint.h">
-      <Filter>Genesis</Filter>
+      <Filter>Genesis\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Genesis\Core\Log.h">
+      <Filter>Genesis\Core</Filter>
     </ClInclude>
     <ClInclude Include="src\Genesis\Events\ApplicationEvent.h">
       <Filter>Genesis\Events</Filter>
@@ -31,16 +37,15 @@
     <ClInclude Include="src\Genesis\Events\MouseEvent.h">
       <Filter>Genesis\Events</Filter>
     </ClInclude>
-    <ClInclude Include="src\Genesis\Core\Log.h">
-      <Filter>Genesis</Filter>
-    </ClInclude>
+    <ClInclude Include="src\gspch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Genesis\Core\Application.cpp">
-      <Filter>Genesis</Filter>
+      <Filter>Genesis\Core</Filter>
     </ClCompile>
     <ClCompile Include="src\Genesis\Core\Log.cpp">
-      <Filter>Genesis</Filter>
+      <Filter>Genesis\Core</Filter>
     </ClCompile>
+    <ClCompile Include="src\gspch.cpp" />
   </ItemGroup>
 </Project>

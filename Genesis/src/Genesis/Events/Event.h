@@ -1,9 +1,6 @@
 #pragma once
 
-#include "../Core/Core.h"
-
-#include <string>
-#include <functional>
+#include "Genesis/Core/Core.h"
 
 namespace Genesis {
 

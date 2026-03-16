@@ -1,8 +1,6 @@
 #pragma once
 
-#include "../Events/Event.h"
-
-#include <sstream>
+#include "Genesis/Events/Event.h"
 
 namespace Genesis {
 
