@@ -8,6 +8,8 @@ namespace Genesis {
 
 	class GENESIS_API KeyEvent : public Event
 	{
+		int m_KeyCode;
+
 	public:
 		inline int GetKeyCode() const { return m_KeyCode; }
 
@@ -15,12 +17,13 @@ namespace Genesis {
 	protected:
 		KeyEvent(int keycode)
 			: m_KeyCode(keycode) { }
-
-		int m_KeyCode;
 	};
 
 	class GENESIS_API KeyPressedEvent : public KeyEvent
 	{
+	private:
+		int m_RepeatCount;
+
 	public:
 		KeyPressedEvent(int keycode, int repeatCount)
 			: KeyEvent(keycode), m_RepeatCount(repeatCount) { }
@@ -35,12 +38,13 @@ namespace Genesis {
 		}
 
 		EVENT_CLASS_TYPE(KeyPressed)
-	private:
-		int m_RepeatCount;
 	};
 
 	class GENESIS_API KeyReleasedEvent : public KeyEvent
 	{
+	private:
+		int m_RepeatCount;
+
 	public:
 		KeyReleasedEvent(int keycode, int repeatCount)
 			: KeyEvent(keycode), m_RepeatCount(repeatCount) { }
@@ -55,8 +59,6 @@ namespace Genesis {
 		}
 
 		EVENT_CLASS_TYPE(KeyReleased)
-	private:
-		int m_RepeatCount;
 	};
 
 	class GENESIS_API KeyTypedEvent : public KeyEvent

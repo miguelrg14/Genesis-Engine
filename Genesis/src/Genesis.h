@@ -2,9 +2,9 @@
 
 // For use by Genesis applications
 
-#include "Genesis/Application.h"
-#include "Genesis/Log.h"
+#include "Genesis/Core/Application.h"
+#include "Genesis/Core/Log.h"
 
 // --- Entry Point ---
-#include "Genesis/EntryPoint.h"
+#include "Genesis/Core/EntryPoint.h"
 // -------------------

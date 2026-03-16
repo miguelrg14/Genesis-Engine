@@ -9,6 +9,9 @@ namespace Genesis
 
 	class GENESIS_API MouseMovedEvent : public Event
 	{
+	private:
+		float m_MouseX, m_MouseY;
+
 	public:
 		MouseMovedEvent(float x, float y)
 			: m_MouseX(x), m_MouseY(y) { }
@@ -25,12 +28,13 @@ namespace Genesis
 
 		EVENT_CLASS_TYPE(MouseMoved)
 		EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput)
-	private:
-		float m_MouseX, m_MouseY;
 	};
 
 	class GENESIS_API MouseScrolledEvent : public Event
 	{
+	private:
+		float m_XOffset, m_YOffset;
+
 	public:
 		MouseScrolledEvent(const float xOffset, const float yOffset)
 			: m_XOffset(xOffset), m_YOffset(yOffset) {}
@@ -47,12 +51,12 @@ namespace Genesis
 
 		EVENT_CLASS_TYPE(MouseScrolled)
 		EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput)
-	private:
-		float m_XOffset, m_YOffset;
 	};
 
 	class GENESIS_API MouseButtonEvent : public Event
 	{
+		int m_Button;
+
 	public:
 		inline int GetMouseButton() const { return m_Button; }
 
@@ -60,8 +64,6 @@ namespace Genesis
 	protected:
 		MouseButtonEvent(int button)
 			:m_Button(button) { }
-
-		int m_Button;
 	};
 
 	class GENESIS_API MouseButtonPressedEvent : public MouseButtonEvent

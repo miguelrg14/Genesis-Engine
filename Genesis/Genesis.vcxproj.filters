@@ -10,13 +10,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Genesis.h" />
-    <ClInclude Include="src\Genesis\Application.h">
+    <ClInclude Include="src\Genesis\Core\Application.h">
       <Filter>Genesis</Filter>
     </ClInclude>
-    <ClInclude Include="src\Genesis\Core.h">
+    <ClInclude Include="src\Genesis\Core\Core.h">
       <Filter>Genesis</Filter>
     </ClInclude>
-    <ClInclude Include="src\Genesis\EntryPoint.h">
+    <ClInclude Include="src\Genesis\Core\EntryPoint.h">
       <Filter>Genesis</Filter>
     </ClInclude>
     <ClInclude Include="src\Genesis\Events\ApplicationEvent.h">
@@ -31,15 +31,15 @@
     <ClInclude Include="src\Genesis\Events\MouseEvent.h">
       <Filter>Genesis\Events</Filter>
     </ClInclude>
-    <ClInclude Include="src\Genesis\Log.h">
+    <ClInclude Include="src\Genesis\Core\Log.h">
       <Filter>Genesis</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Genesis\Application.cpp">
+    <ClCompile Include="src\Genesis\Core\Application.cpp">
       <Filter>Genesis</Filter>
     </ClCompile>
-    <ClCompile Include="src\Genesis\Log.cpp">
+    <ClCompile Include="src\Genesis\Core\Log.cpp">
       <Filter>Genesis</Filter>
     </ClCompile>
   </ItemGroup>

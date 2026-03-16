@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Genesis/Core.h"
+#include "../Core/Core.h"
 
 #include <string>
 #include <functional>
@@ -53,16 +53,14 @@ namespace Genesis {
 
 	class EventDispatcher
 	{
-		template<typename T>
-		using EventFn = std::function<bool(T&)>;
+		template<typename T> using EventFn = std::function<bool(T&)>;
+
 	public:
-		EventDispatcher(Event& event)
-			: m_Event(event)
+		EventDispatcher(Event& event) : m_Event(event)
 		{
 		}
 
-		template<typename T>
-		bool Dispatch(EventFn<T> func)
+		template<typename T> bool Dispatch(EventFn<T> func)
 		{
 			if (m_Event.GetEventType() == T::GetStaticType())
 			{
@@ -71,6 +69,7 @@ namespace Genesis {
 			}
 			return false;
 		}
+
 	private:
 		Event& m_Event;
 	};

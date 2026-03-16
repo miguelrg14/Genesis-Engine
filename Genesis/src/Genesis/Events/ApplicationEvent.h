@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Events/Event.h"
+#include "../Events/Event.h"
 
 #include <sstream>
 
@@ -8,6 +8,9 @@ namespace Genesis {
 
 	class GENESIS_API WindowResizeEvent : public Event
 	{
+	private:
+		unsigned int m_Width, m_Height;
+
 	public:
 		WindowResizeEvent(unsigned int width, unsigned int height)
 			: m_Width(width), m_Height(height) { }
@@ -24,8 +27,6 @@ namespace Genesis {
 
 		EVENT_CLASS_TYPE(WindowResize)
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)
-	private:
-		unsigned int m_Width, m_Height;
 	};
 
 	class GENESIS_API WindowCloseEvent : public Event

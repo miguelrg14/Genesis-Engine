@@ -159,18 +159,18 @@ copy /B /Y "..\bin\Dist-windows-x86_64\Genesis\Genesis.dll" "$(ProjectDir)\..\bi
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="src\Genesis.h" />
-    <ClInclude Include="src\Genesis\Application.h" />
-    <ClInclude Include="src\Genesis\Core.h" />
-    <ClInclude Include="src\Genesis\EntryPoint.h" />
+    <ClInclude Include="src\Genesis\Core\Application.h" />
+    <ClInclude Include="src\Genesis\Core\Core.h" />
+    <ClInclude Include="src\Genesis\Core\EntryPoint.h" />
     <ClInclude Include="src\Genesis\Events\ApplicationEvent.h" />
     <ClInclude Include="src\Genesis\Events\Event.h" />
     <ClInclude Include="src\Genesis\Events\KeyEvent.h" />
     <ClInclude Include="src\Genesis\Events\MouseEvent.h" />
-    <ClInclude Include="src\Genesis\Log.h" />
+    <ClInclude Include="src\Genesis\Core\Log.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Genesis\Application.cpp" />
-    <ClCompile Include="src\Genesis\Log.cpp" />
+    <ClCompile Include="src\Genesis\Core\Application.cpp" />
+    <ClCompile Include="src\Genesis\Core\Log.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
