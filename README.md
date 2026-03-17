@@ -8,8 +8,9 @@ Supported OS:
 
 Libraries and technologies used:
 - VS 2026 and C++20.
-- Spdlog: https://github.com/gabime/spdlog 
-- Premake: https://github.com/premake/premake-core 
+- Spdlog: Loggin messages management. [https://github.com/gabime/spdlog]
+- Premake: Project archives generator. [https://github.com/premake/premake-core]
+- GLFW: OpenGL/Vulkan management, create windows and manage input. [https://github.com/glfw/glfw]
 
 More Wikis and information:
 - Cppreference: https://en.cppreference.com/ 
