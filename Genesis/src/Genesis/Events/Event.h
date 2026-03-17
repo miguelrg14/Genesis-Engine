@@ -1,5 +1,7 @@
 #pragma once
 
+#include "gspch.h"
+
 #include "Genesis/Core/Core.h"
 
 namespace Genesis {

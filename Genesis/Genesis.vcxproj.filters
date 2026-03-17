@@ -10,6 +10,12 @@
     <Filter Include="Genesis\Events">
       <UniqueIdentifier>{D72FACF6-C3FD-9FFC-AC91-102398FE7B61}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Genesis.h" />
@@ -25,6 +31,9 @@
     <ClInclude Include="src\Genesis\Core\Log.h">
       <Filter>Genesis\Core</Filter>
     </ClInclude>
+    <ClInclude Include="src\Genesis\Core\Window.h">
+      <Filter>Genesis\Core</Filter>
+    </ClInclude>
     <ClInclude Include="src\Genesis\Events\ApplicationEvent.h">
       <Filter>Genesis\Events</Filter>
     </ClInclude>
@@ -37,6 +46,9 @@
     <ClInclude Include="src\Genesis\Events\MouseEvent.h">
       <Filter>Genesis\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
     <ClInclude Include="src\gspch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -45,6 +57,9 @@
     </ClCompile>
     <ClCompile Include="src\Genesis\Core\Log.cpp">
       <Filter>Genesis\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\gspch.cpp" />
   </ItemGroup>
