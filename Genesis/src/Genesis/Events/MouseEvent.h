@@ -53,6 +53,7 @@ namespace Genesis
 
 	class GENESIS_API MouseButtonEvent : public Event
 	{
+	protected:
 		int m_Button;
 
 	public:
