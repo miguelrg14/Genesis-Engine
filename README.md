@@ -12,6 +12,7 @@ Libraries and technologies used:
 - Premake: Project archives generator. [https://github.com/premake/premake-core]
 - GLFW: Creates windows and OpenGL/Vulkan contexts, manages input. [https://github.com/glfw/glfw]
 - Glad: Loads modern OpenGL functions dynamically. [https://glad.dav1d.de/]
+- ImGui: Immediate mode graphical user interface for debugging tools and editor interfaces. [https://github.com/ocornut/imgui]
 
 More Wikis and information:
 - Cppreference: https://en.cppreference.com/ 
