@@ -10,7 +10,8 @@ Libraries and technologies used:
 - VS 2026 and C++20.
 - Spdlog: Loggin messages management. [https://github.com/gabime/spdlog]
 - Premake: Project archives generator. [https://github.com/premake/premake-core]
-- GLFW: OpenGL/Vulkan management, create windows and manage input. [https://github.com/glfw/glfw]
+- GLFW: Creates windows and OpenGL/Vulkan contexts, manages input. [https://github.com/glfw/glfw]
+- Glad: Loads modern OpenGL functions dynamically. [https://glad.dav1d.de/]
 
 More Wikis and information:
 - Cppreference: https://en.cppreference.com/ 
