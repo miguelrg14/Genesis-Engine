@@ -80,7 +80,7 @@
       <PrecompiledHeaderFile>gspch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>GS_PLATFORM_WINDOWS;GS_BUILD_DLL;GLFW_INCLUDE_NONE;GS_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>src;vendor\spdlog\include;vendor\GLFW\include;vendor\Glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;vendor\spdlog\include;vendor\GLFW\include;vendor\Glad\include;vendor\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <AdditionalOptions>/utf-8 /MDd %(AdditionalOptions)</AdditionalOptions>
@@ -106,7 +106,7 @@ copy /B /Y "..\bin\Debug-windows-x86_64\Genesis\Genesis.dll" "$(ProjectDir)\..\b
       <PrecompiledHeaderFile>gspch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>GS_PLATFORM_WINDOWS;GS_BUILD_DLL;GLFW_INCLUDE_NONE;GS_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>src;vendor\spdlog\include;vendor\GLFW\include;vendor\Glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;vendor\spdlog\include;vendor\GLFW\include;vendor\Glad\include;vendor\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -136,7 +136,7 @@ copy /B /Y "..\bin\Release-windows-x86_64\Genesis\Genesis.dll" "$(ProjectDir)\..
       <PrecompiledHeaderFile>gspch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>GS_PLATFORM_WINDOWS;GS_BUILD_DLL;GLFW_INCLUDE_NONE;GS_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>src;vendor\spdlog\include;vendor\GLFW\include;vendor\Glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;vendor\spdlog\include;vendor\GLFW\include;vendor\Glad\include;vendor\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -173,6 +173,8 @@ copy /B /Y "..\bin\Dist-windows-x86_64\Genesis\Genesis.dll" "$(ProjectDir)\..\bi
     <ClInclude Include="src\Genesis\Events\Event.h" />
     <ClInclude Include="src\Genesis\Events\KeyEvent.h" />
     <ClInclude Include="src\Genesis\Events\MouseEvent.h" />
+    <ClInclude Include="src\Genesis\ImGui\ImGuiLayer.h" />
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\gspch.h" />
   </ItemGroup>
@@ -181,6 +183,8 @@ copy /B /Y "..\bin\Dist-windows-x86_64\Genesis\Genesis.dll" "$(ProjectDir)\..\bi
     <ClCompile Include="src\Genesis\Core\Layer.cpp" />
     <ClCompile Include="src\Genesis\Core\LayerStack.cpp" />
     <ClCompile Include="src\Genesis\Core\Log.cpp" />
+    <ClCompile Include="src\Genesis\ImGui\ImGuiLayer.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\gspch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
@@ -192,6 +196,9 @@ copy /B /Y "..\bin\Dist-windows-x86_64\Genesis\Genesis.dll" "$(ProjectDir)\..\bi
     </ProjectReference>
     <ProjectReference Include="vendor\Glad\Glad.vcxproj">
       <Project>{BDD6857C-A90D-870D-52FA-6C103E10030F}</Project>
+    </ProjectReference>
+    <ProjectReference Include="vendor\imgui\ImGui.vcxproj">
+      <Project>{C0FF640D-2C14-8DBE-F595-301E616989EF}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

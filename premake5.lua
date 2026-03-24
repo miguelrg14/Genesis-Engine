@@ -13,11 +13,13 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 -- Include directories relative to root folder (solution directory)
 IncludeDir = {}
-IncludeDir["GLFW"] = "Genesis/vendor/GLFW/include"
-IncludeDir["Glad"] = "Genesis/vendor/Glad/include"
+IncludeDir["GLFW"]  = "Genesis/vendor/GLFW/include"
+IncludeDir["Glad"]  = "Genesis/vendor/Glad/include"
+IncludeDir["imgui"] = "Genesis/vendor/imgui"
 
 include "Genesis/vendor/GLFW"
 include "Genesis/vendor/Glad"
+include "Genesis/vendor/imgui"
 
 project "Genesis"
 	location "Genesis"
@@ -41,12 +43,14 @@ project "Genesis"
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
 		"%{IncludeDir.GLFW}",
-		"%{IncludeDir.Glad}"
+		"%{IncludeDir.Glad}",
+		"%{IncludeDir.imgui}"
 	}
 	links
 	{
 		"GLFW",
 		"Glad",
+		"imgui",
 		"opengl32.lib"
 	}
 
